@@ -1,12 +1,9 @@
 package Hunter_LEVEL;
-
 import java.util.Scanner;
-
 public class identicalnumber {
 	@SuppressWarnings("resource")
 	public static void main(String args[]){
 		int n,m = 0;
-		
 		Scanner s=new Scanner(System.in);
 		n=s.nextInt();
 		int[] a=new int[n];
@@ -24,10 +21,7 @@ public class identicalnumber {
 					m=a[i];
 				}
 			}
-			
 		}
 		System.out.println(m);
-		
 	}
-
 }
