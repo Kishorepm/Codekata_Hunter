@@ -16,6 +16,22 @@ public class add0ofarray {
 		}
 		for(int i=0;i<n;i++)
 		{
+			a[i]=reader.nextInt();
+		}
+		for(int i=0;i<n;i++)
+		{
+			for(int j=0;j<n-1;j++)
+			{
+				int temp=0;
+				if(a[j]>a[j+1]){
+					temp=a[j];
+					a[j]=a[j+1];
+					a[j+1]=temp;
+				}
+			}
+		}
+		for(int i=0;i<n;i++)
+		{
 			for(int j=i+1;j<n;j++)
 			{
 				if(a[i]+a[j]==0)
